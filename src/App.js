@@ -1,23 +1,17 @@
 import logo from './logo.svg';
-import './App.css';
+import './common.scss';
+import Write from './comp/Write'
+import List from './comp/List'
+import Item from './comp/Item'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="todolist">
+      <h1>TO DO LIST</h1>
+      <Write />
+      <p>할일 1개 남음</p>
+      <List />
     </div>
   );
 }
